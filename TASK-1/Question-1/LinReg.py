@@ -4,9 +4,8 @@ import numpy as np
 
 dataset = np.genfromtxt('Salary_Data.csv', delimiter=',')
 dataset = np.delete(dataset, 0, axis=0)
-x = dataset[:,0]
+x = dataset[:,0].reshape(-1,1)
 y = dataset[:,1]
-x = x.reshape(-1,1)
 
 regr = LinearRegression()
 regr.fit(x,y)
