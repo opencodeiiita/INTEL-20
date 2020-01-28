@@ -14,3 +14,6 @@ print(data.T)
 data=data.reshape(5,5)
 print("\nReshaped array into matrix")
 print(data)
+
+#printing the inverse
+print(np.linalg.pinv(data))
