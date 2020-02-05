@@ -2,7 +2,7 @@ import matplotlib.pyplot as plot
 import numpy as npy
 
 from sklearn import ln
-data=npy.genfromtxt(r'Salary_Data.csv', delimiter=',')
+data=npy.genfromtxt(r'Salary_Data.csv',delimiter=',')
 data=npy.delete(data,0,axis=0)
 
 x=dat[:,0]
