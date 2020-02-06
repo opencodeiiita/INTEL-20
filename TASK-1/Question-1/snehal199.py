@@ -4,7 +4,7 @@ from numpy import array
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-data=pd.read_csv('C:/Users/Snehalreet/Desktop/INTEL-20/TASK-1/Question-1/Salary_Data.csv')
+data=pd.read_csv('Salary_Data.csv')
 print(data.shape)
 X=data['YearsExperience'].values.reshape(-1,1)
 Y=data['Salary'].values.reshape(-1,1)
